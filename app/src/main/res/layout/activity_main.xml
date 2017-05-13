@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageButton
+
+        android:id="@+id/shake"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:textAlignment="center"
+        android:scaleType="fitCenter"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="95dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="shake"
+        android:background="@drawable/shake" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/finger"
+        android:id="@+id/finger"
+        android:textAlignment="center"
+        android:elevation="0dp"
+        android:scaleType="fitCenter"
+        android:layout_marginStart="75dp"
+        android:layout_alignTop="@+id/shake"
+        android:layout_alignParentStart="true"
+        android:onClick="finger"
+        android:background="@drawable/finger" />
+</RelativeLayout>
